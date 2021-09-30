@@ -1,0 +1,9 @@
+vendor_name = ModelSim
+source_file = 1, /home/student1/zzuberi/coe328/Lab1/Lab1Part1/Lab1Part1.bdf
+source_file = 1, /home/student1/zzuberi/coe328/Lab1/Lab1Part1/db/Lab1Part1.cbx.xml
+design_name = Lab1Part1
+instance = comp, \x2~I\, x2, Lab1Part1, 1
+instance = comp, \x1~I\, x1, Lab1Part1, 1
+instance = comp, \x3~I\, x3, Lab1Part1, 1
+instance = comp, \inst3~0\, inst3~0, Lab1Part1, 1
+instance = comp, \f~I\, f, Lab1Part1, 1
