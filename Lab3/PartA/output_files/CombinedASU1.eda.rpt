@@ -1,0 +1,61 @@
+EDA Netlist Writer report for CombinedASU1
+Thu Oct 14 15:41:09 2021
+Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. EDA Netlist Writer Summary
+  3. EDA Netlist Writer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------+
+; EDA Netlist Writer Summary                                        ;
++---------------------------+---------------------------------------+
+; EDA Netlist Writer Status ; Successful - Thu Oct 14 15:41:09 2021 ;
+; Revision Name             ; CombinedASU1                          ;
+; Top-level Entity Name     ; CombinedASU1                          ;
+; Family                    ; Cyclone II                            ;
++---------------------------+---------------------------------------+
+
+
++-----------------------------+
+; EDA Netlist Writer Messages ;
++-----------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 32-bit EDA Netlist Writer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+    Info: Processing started: Thu Oct 14 15:41:08 2021
+Info: Command: quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog CombinedASU1 -c CombinedASU1 --vector_source=/home/student1/zzuberi/coe328/Lab3/Lab/PartA/CombinedASU1.vwf --testbench_file=./simulation/qsim/CombinedASU1.vt
+Warning (201007): Can't find port "display[7]" in design
+Warning (201007): Can't find port "neg_display[7]" in design
+Info (201000): Generated Verilog Test Bench File ./simulation/qsim/CombinedASU1.vt for simulation
+Info: Quartus II 32-bit EDA Netlist Writer was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 318 megabytes
+    Info: Processing ended: Thu Oct 14 15:41:09 2021
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+
