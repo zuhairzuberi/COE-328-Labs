@@ -1,0 +1,71 @@
+|johnsbdf
+leds[6] <= sseg:inst1.leds[6]
+leds[5] <= sseg:inst1.leds[5]
+leds[4] <= sseg:inst1.leds[4]
+leds[3] <= sseg:inst1.leds[3]
+leds[2] <= sseg:inst1.leds[2]
+leds[1] <= sseg:inst1.leds[1]
+leds[0] <= sseg:inst1.leds[0]
+Clear => johns:inst.Clrn
+E => johns:inst.E
+Clock => johns:inst.Clkn
+negleds[6] <= sseg:inst1.negleds[6]
+negleds[5] <= sseg:inst1.negleds[5]
+negleds[4] <= sseg:inst1.negleds[4]
+negleds[3] <= sseg:inst1.negleds[3]
+negleds[2] <= sseg:inst1.negleds[2]
+negleds[1] <= sseg:inst1.negleds[1]
+negleds[0] <= sseg:inst1.negleds[0]
+Q[2] <= johns:inst.Q[2]
+Q[1] <= johns:inst.Q[1]
+Q[0] <= johns:inst.Q[0]
+
+
+|johnsbdf|sseg:inst1
+bcd[0] => Mux0.IN19
+bcd[0] => Mux1.IN5
+bcd[0] => Mux2.IN19
+bcd[1] => Mux0.IN18
+bcd[1] => Mux2.IN18
+bcd[2] => Mux0.IN17
+bcd[2] => Mux2.IN17
+bcd[3] => Mux0.IN16
+bcd[3] => Mux1.IN4
+bcd[3] => Mux2.IN16
+bcd[3] => leds[1].DATAIN
+leds[6] <= <VCC>
+leds[5] <= <VCC>
+leds[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+leds[3] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+leds[2] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+leds[1] <= bcd[3].DB_MAX_OUTPUT_PORT_TYPE
+leds[0] <= <VCC>
+neg => negleds[6].DATAIN
+negleds[6] <= neg.DB_MAX_OUTPUT_PORT_TYPE
+negleds[5] <= <GND>
+negleds[4] <= <GND>
+negleds[3] <= <GND>
+negleds[2] <= <GND>
+negleds[1] <= <GND>
+negleds[0] <= <GND>
+
+
+|johnsbdf|johns:inst
+Clrn => Qreg[2].ACLR
+Clrn => Qreg[1].ACLR
+Clrn => Qreg[0].ACLR
+E => Qreg[0].ENA
+E => Qreg[1].ENA
+E => Qreg[2].ENA
+Clkn => Qreg[2].CLK
+Clkn => Qreg[1].CLK
+Clkn => Qreg[0].CLK
+STUDENT_ID[0] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+STUDENT_ID[1] <= <GND>
+STUDENT_ID[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+STUDENT_ID[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Qreg[2].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Qreg[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[0] <= Qreg[0].DB_MAX_OUTPUT_PORT_TYPE
+
+

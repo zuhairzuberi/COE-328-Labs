@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="johnsbdf">
+		<CBX_INST_ENTRY INSTANCE_NAME="|johnsbdf|johns:inst|lpm_mux:Mux0" CBX_FILE_NAME="mux_3nc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|johnsbdf|johns:inst|lpm_mux:Mux2" CBX_FILE_NAME="mux_umc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|johnsbdf|sseg:inst1|lpm_mux:Mux1" CBX_FILE_NAME="mux_umc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|johnsbdf|johns:inst|lpm_mux:Mux1" CBX_FILE_NAME="mux_3nc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|johnsbdf|sseg:inst1|lpm_mux:Mux0" CBX_FILE_NAME="mux_joc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|johnsbdf|sseg:inst1|lpm_mux:Mux2" CBX_FILE_NAME="mux_joc.tdf"/>
+	</PROJECT>
+</LOG_ROOT>
