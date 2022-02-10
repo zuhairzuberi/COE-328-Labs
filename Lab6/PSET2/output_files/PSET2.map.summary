@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sat Nov 27 19:50:06 2021
+Quartus II 32-bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
+Revision Name : PSET2
+Top-level Entity Name : PSET2_Processor
+Family : Cyclone II
+Total logic elements : 121
+    Total combinational functions : 98
+    Dedicated logic registers : 33
+Total registers : 33
+Total pins : 50
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
