@@ -1,0 +1,27 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+USE IEEE.NUMERIC_STD.ALL;
+ENTITY ALU IS
+PORT(
+	Clock : IN STD_LOGIC; -- input clock signal
+	student_id : IN UNSIGNED(3 DOWNTO 0); -- 4 bit student id from FSM 
+	OP : IN UNSIGNED(15 DOWNTO 0); -- 16 bit selector for decoder operations
+	R: OUT UNSIGNED (3 DOWNTO 0));
+END ALU;
+
+ARCHITECTURE calculation OF ALU3 IS
+SIGNAL reg1, reg2, result : UNSIGNED(3 DOWNTO 0):= (OTHERS =>'0');
+BEGIN 
+PROCESS(Clock, OP)
+BEGIN 
+	IF(rising_edge(Clock)) THEN 
+		IF((student_id mod 2) = 0)THEN
+			result <= "0000"; -- n
+		ELSE	
+			result <= "0001"; -- y
+		END IF;		
+	END IF;
+END PROCESS;
+R <= result;
+END calculation;
